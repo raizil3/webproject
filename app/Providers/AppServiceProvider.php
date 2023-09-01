@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Shcema;
+use Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -24,6 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Shcema::defaultStringLength(191);
+        Schema::defaultStringLength(191);
     }
 }
